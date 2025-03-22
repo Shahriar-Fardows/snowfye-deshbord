@@ -114,7 +114,7 @@ const Login = () => {
             </Link>
           </div>
         </form>
-      {/* </div> */}
+      </div>
     </div>
   );
 };
