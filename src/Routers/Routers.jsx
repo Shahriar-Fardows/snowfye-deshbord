@@ -5,6 +5,7 @@ import Home from "../Home/Home";
 import LoadingSpinner from "../Shared/LoadingSpinner";
 import Login from "../Auth/Login/Login";
 import Register from "../Auth/Register/Register";
+import PromoCode from "../Page/PromoCode/PromoCode";
 
 
 // Define the wait function
@@ -28,6 +29,14 @@ const Routers = createBrowserRouter([
         element: (
           <Suspense fallback={<LoadingSpinner />}>
             <Home />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/promo-code",
+        element: (
+          <Suspense fallback={<LoadingSpinner />}>
+            <PromoCode />
           </Suspense>
         ),
       },
